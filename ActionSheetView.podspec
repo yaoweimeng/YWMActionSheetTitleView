@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ActionSheetView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ActionSheetView.'
+  s.summary          = 'ActionSheetView'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/yaoweimeng225@163.com/ActionSheetView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'yaoweimeng225@163.com' => '“2853823211@qq.com”' }
+  s.author           = { 'yaoweimeng225@163.com' => '“yaoweimeng225@163.com”' }
   s.source           = { :git => 'https://github.com/yaoweimeng225@163.com/ActionSheetView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

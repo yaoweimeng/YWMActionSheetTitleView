@@ -7,9 +7,9 @@
 //
 
 #import "YWMViewController.h"
-
-@interface YWMViewController ()
-
+#import "YWMActionSheetTitleView.h"
+@interface YWMViewController ()<TYTActionSheetTitleViewDelegate>
+@property (nonatomic, strong) YWMActionSheetTitleView *actionTitleView;
 @end
 
 @implementation YWMViewController
@@ -17,9 +17,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    _actionTitleView = [[YWMActionSheetTitleView alloc] initActionSheetWithTopTips:@"您的账号未设置密码，请使用手机验证码登录或设置密码" actionTitles:@[@"验证码登录", @"去设置密码"]];
+    _actionTitleView.delegate = self;
+    [_actionTitleView showActionSheetView];
 }
-
+- (void)actionSheetTitleView:(YWMActionSheetTitleView *)actionView didSelecMenuIndex:(NSInteger)index{
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
